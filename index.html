@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Abhijeet Gupta | Doctor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Dr. <span>Abhijeet Gupta</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO OUR CLINIC</p>
+
+            <h1>Dr. Abhijeet Gupta</h1>
+
+            <h2>Professional Healthcare & Medical Consultation</h2>
+
+            <p>
+                Your health is our priority. Get professional consultation
+                and quality healthcare in a comfortable environment.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#appointment" class="btn">Book Appointment</a>
+                <a href="#about" class="btn outline">Know More</a>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-icon">⚕</div>
+            <h3>Dr. Abhijeet Gupta</h3>
+            <p>Doctor & Healthcare Consultant</p>
+
+            <div class="doctor-info">
+                <div>✓ Professional Consultation</div>
+                <div>✓ Patient Care</div>
+                <div>✓ Health Guidance</div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>ABOUT DOCTOR</p>
+            <h2>Meet Dr. Abhijeet Gupta</h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <div class="doctor-big-icon">⚕</div>
+            </div>
+
+            <div class="about-content">
+                <h3>Dedicated to Better Healthcare</h3>
+
+                <p>
+                    Dr. Abhijeet Gupta is dedicated to providing professional
+                    medical consultation and patient-focused healthcare.
+                </p>
+
+                <p>
+                    Our goal is to provide patients with proper guidance,
+                    comfortable consultation and reliable healthcare services.
+                </p>
+
+                <div class="stats">
+                    <div>
+                        <strong>10+</strong>
+                        <span>Services</span>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Support</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Care</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="section services-section">
+
+        <div class="section-title">
+            <p>OUR SERVICES</p>
+            <h2>Healthcare Services</h2>
+        </div>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <div class="service-icon">🩺</div>
+                <h3>General Consultation</h3>
+                <p>
+                    Professional consultation for common health concerns
+                    and general medical guidance.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">❤️</div>
+                <h3>Health Checkup</h3>
+                <p>
+                    Basic health checkup and guidance for maintaining
+                    a healthy lifestyle.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💊</div>
+                <h3>Medical Guidance</h3>
+                <p>
+                    Proper guidance regarding medicines, health habits
+                    and follow-up care.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">👨‍⚕️</div>
+                <h3>Patient Care</h3>
+                <p>
+                    Patient-focused care with attention to individual
+                    healthcare needs.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Appointment -->
+    <section id="appointment" class="section appointment-section">
+
+        <div class="section-title">
+            <p>APPOINTMENT</p>
+            <h2>Book Your Appointment</h2>
+        </div>
+
+        <div class="appointment-container">
+
+            <div class="appointment-info">
+                <h3>Schedule a Consultation</h3>
+
+                <p>
+                    Fill out the form and submit your appointment request.
+                    We will contact you with further details.
+                </p>
+
+                <div class="contact-item">
+                    📞 <span>Phone: +91 XXXXX XXXXX</span>
+                </div>
+
+                <div class="contact-item">
+                    ✉️ <span>Email: doctor@example.com</span>
+                </div>
+
+                <div class="contact-item">
+                    🕐 <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+
+
+            <form id="appointmentForm" class="appointment-form">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Full Name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                >
+
+                <select id="service" required>
+                    <option value="">Select Service</option>
+                    <option>General Consultation</option>
+                    <option>Health Checkup</option>
+                    <option>Medical Guidance</option>
+                    <option>Patient Care</option>
+                </select>
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Describe your concern"
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    Submit Appointment
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+
+        <div class="section-title">
+            <p>CONTACT US</p>
+            <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-box">
+                <div>📍</div>
+                <h3>Clinic Address</h3>
+                <p>Your Clinic Address, Bihar, India</p>
+            </div>
+
+            <div class="contact-box">
+                <div>📞</div>
+                <h3>Phone</h3>
+                <p>+91 XXXXX XXXXX</p>
+            </div>
+
+            <div class="contact-box">
+                <div>✉️</div>
+                <h3>Email</h3>
+                <p>doctor@example.com</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>Dr. Abhijeet Gupta</h3>
+
+        <p>
+            Professional Healthcare & Medical Consultation
+        </p>
+
+        <p class="copyright">
+            © 2026 Dr. Abhijeet Gupta. All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
